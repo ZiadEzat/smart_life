@@ -12,6 +12,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          primaryColor: Colors.white,
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+              primary: Colors.white, secondary: const Color(0XFF6750A4))),
       home: Scaffold(
         body: Homepage(),
       ),
